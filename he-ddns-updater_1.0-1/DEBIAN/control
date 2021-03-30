@@ -1,0 +1,10 @@
+Package: he-ddns-updater
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: all
+Depends: curl (>= 7.0.0), bash (>= 5.0)
+Maintainer: Libre Liu <libreliu@foxmail.com>
+Description: Basic he ddns updater
+ hopes to be good
+

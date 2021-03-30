@@ -1,0 +1,4 @@
+#!/bin/sh
+
+systemctl stop he-ddns-updater.timer || true
+systemctl disable he-ddns-updater.timer || true

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Hurricane Electric DDNS Updater v1.0"
+echo "Make sure to put /etc/he-ddns-updater/api_key.txt and /etc/he-ddns-updater/domain.txt"
+
+HE_API_PASSWORD=`cat /etc/he-ddns-updater/api_key.txt`
+HE_DOMAIN_NAME=`cat /etc/he-ddns-updater/domain.txt`
+curl -6 "https://${HE_DOMAIN_NAME}:${HE_API_PASSWORD}@dyn.dns.he.net/nic/update?hostname=${HE_DOMAIN_NAME}"
+echo ""
+#curl -4 "https://${HE_DOMAIN_NAME}:${HE_API_PASSWORD}@dyn.dns.he.net/nic/update?hostname=${HE_DOMAIN_NAME}"
+#echo ""

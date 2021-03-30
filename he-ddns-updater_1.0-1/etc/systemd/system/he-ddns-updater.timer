@@ -1,0 +1,10 @@
+[Unit]
+Description=Run he ddns updater hourly
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=1min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

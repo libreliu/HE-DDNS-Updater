@@ -1,0 +1,7 @@
+[Unit]
+Description=HE DDNS Updater
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/update-he-ddns
+[Install]
+WantedBy=multi-user.target
